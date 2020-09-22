@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<head></head>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 <body>
-    <h1>UniMedical</h1>
-    <!-- LOGO HERE -->
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkqJfFVNEH14sro8lPdkJlx9XUqRN3aW0hSvxwUH8CzQtPDg/viewform">Survey Link</a>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
-    </form>
+  <h1>UniMedical</h1>
+  <!-- LOGO HERE -->
+  <div class="row" style="margin-bottom: 50px">
+    <div class="col-sm-2"></div>
+    <div class="center col-sm-8">
+      <p>
+        UniMedical is a software that provides the ability to quickly search for patient's health history. 
+        Rather than relying on a patient's memory or waiting for their previous doctors to transfer records over, 
+        UniMedical allows access to records in seconds. Click 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkqJfFVNEH14sro8lPdkJlx9XUqRN3aW0hSvxwUH8CzQtPDg/viewform">
+        here
+        </a>
+        if you are interested and want to give us feedback.
+      </p>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <form>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" class="form-control" id="fname" placeholder="Enter first name">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" class="form-control" id="lname" placeholder="Enter last name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
 </body>
+</html>
